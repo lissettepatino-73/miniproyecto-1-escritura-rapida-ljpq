@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600" prefWidth="800.0" spacing="20" style="-fx-background-color: #2d1b2e;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.escriturarapida.controller.GameController">
+    <padding><Insets bottom="40" left="60" right="60" top="40" /></padding>
+
+    <Label alignment="CENTER" style="-fx-font-size: 32; -fx-text-fill: #ff85a1; -fx-font-weight: bold;" text="✍ Escritura Rápida" />
+    <Label fx:id="levelLabel" alignment="CENTER" style="-fx-font-size: 18; -fx-text-fill: #f4a7c3; -fx-font-weight: bold;" text="Nivel: 1" />
+    <Label fx:id="timerLabel" alignment="CENTER" style="-fx-font-size: 32; -fx-text-fill: #ff6b9d; -fx-font-weight: bold;" text="⏱ 20" />
+    <Label fx:id="wordLabel" alignment="CENTER" style="-fx-font-size: 24; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="Presiona Iniciar para jugar" />
+    <TextField fx:id="inputField" alignment="CENTER" prefWidth="400.0" promptText="Escribe aquí..." style="-fx-font-size: 16; -fx-background-color: #4a2040; -fx-text-fill: white; -fx-prompt-text-fill: #cc88aa; -fx-background-radius: 8; -fx-padding: 10;" />
+    <Button fx:id="actionButton" alignment="CENTER" onAction="#onActionButtonClick" prefHeight="45.0" prefWidth="220.0" style="-fx-font-size: 16; -fx-background-color: #ff6b9d; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="Iniciar juego" />
+    <Label fx:id="messageLabel" alignment="CENTER" prefHeight="30.0" style="-fx-font-size: 15; -fx-text-fill: #ffb3c6; -fx-font-weight: bold;" text="" />
+</VBox>
